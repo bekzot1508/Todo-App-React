@@ -23,4 +23,10 @@ export const arr = [
           title: "Buy Mango",
           active: false
         },
+        {
+          id: 5,
+          size: 18,
+          title: "Buy Milk",
+          active: false
+        },
 ]

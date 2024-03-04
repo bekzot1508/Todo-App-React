@@ -1,10 +1,21 @@
-const Filter = () => {
+const Filter = ({filter, onFilterSelect}) => {
+    const buttons = [
+        {id: "all", label: "All Products"},
+        {id: "completed", label: "completed"},
+        {id: "big-size", label: "Big Size"}
+    ]
     return (
         <div className="filter">
             <div className="btns">
-                <button className="active">All Products</button>
-                <button>Complete</button>
-                <button>Big Size</button>
+                {buttons.map(btn => (
+                   <button 
+                     key={btn.id} 
+                     className={`${filter === btn.id && "active"}`}
+                     onClick={() => onFilterSelect(btn.id)}
+                   >
+                    {btn.label}
+                   </button>
+                ))}
             </div>
         </div>
     )

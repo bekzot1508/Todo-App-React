@@ -26,7 +26,6 @@ class ShoppingAddForm extends React.Component {
       } else{
           this.props.onAdd(data)
       }
- 
     }
 
    
