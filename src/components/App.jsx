@@ -108,7 +108,7 @@ class App extends Component {
               />
 
             </div>
-          <img src="/public/earth.svg" alt="earth map" />
+          <img src="/public/earth-map.png" width={630} height={636} alt="earth map" />
           </div>
       </div>
   )
